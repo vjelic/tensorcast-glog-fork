@@ -10,7 +10,179 @@
           "version": "1.0.0",
           "semanticVersion": "1.0.0",
           "informationUri": "https://www.glog.ai",
-          "rules": [],
+          "rules": [
+            {
+              "id": "36e67a54-6f32-3646-a04a-3149a5ce2015",
+              "name": "trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
+              "shortDescription": {
+                "text": "Opengrep Finding: trailofbits.python.automatic-memory-pinning.automatic-memory-pinning"
+              },
+              "fullDescription": {
+                "text": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "helpUri": "https://semgrep.dev/r/trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
+              "help": {
+                "text": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/trailofbits.python.automatic-memory-pinning.automatic-memory-pinning)\n - [https://pytorch.org/docs/stable/data.html#memory-pinning](https://pytorch.org/docs/stable/data.html#memory-pinning)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "trailofbits.python.automatic-memory-pinning.automatic-memory-pinning"
+                ]
+              }
+            },
+            {
+              "id": "a9f09430-503e-31ff-b70a-22caae0479ee",
+              "name": "python.lang.security.deserialization.pickle.avoid-pickle",
+              "shortDescription": {
+                "text": "Opengrep Finding: python.lang.security.deserialization.pickle.avoid-pickle"
+              },
+              "fullDescription": {
+                "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "helpUri": "https://semgrep.dev/r/python.lang.security.deserialization.pickle.avoid-pickle",
+              "help": {
+                "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/python.lang.security.deserialization.pickle.avoid-pickle)\n - [https://docs.python.org/3/library/pickle.html](https://docs.python.org/3/library/pickle.html)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "python.lang.security.deserialization.pickle.avoid-pickle"
+                ]
+              }
+            },
+            {
+              "id": "21e2f9d2-c7a9-3712-a2d9-7426b75933c7",
+              "name": "trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
+              "shortDescription": {
+                "text": "Opengrep Finding: trailofbits.python.automatic-memory-pinning.automatic-memory-pinning"
+              },
+              "fullDescription": {
+                "text": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "helpUri": "https://semgrep.dev/r/trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
+              "help": {
+                "text": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/trailofbits.python.automatic-memory-pinning.automatic-memory-pinning)\n - [https://pytorch.org/docs/stable/data.html#memory-pinning](https://pytorch.org/docs/stable/data.html#memory-pinning)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "trailofbits.python.automatic-memory-pinning.automatic-memory-pinning"
+                ]
+              }
+            },
+            {
+              "id": "2055e11b-ca5e-3d02-b28d-937c12a20c72",
+              "name": "resources.rules.insecure-subprocess-use",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.insecure-subprocess-use"
+              },
+              "fullDescription": {
+                "text": "The Python 'subprocess' module called with 'shell=True' may allow for shell injection"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "The Python 'subprocess' module called with 'shell=True' may allow for shell injection\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "The Python 'subprocess' module called with 'shell=True' may allow for shell injection\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.insecure-subprocess-use"
+                ]
+              }
+            },
+            {
+              "id": "aae5145e-f935-3163-901a-62accea369a2",
+              "name": "resources.rules.dlint-catastrophic-redos",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
+              },
+              "fullDescription": {
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "help": {
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.dlint-catastrophic-redos"
+                ]
+              }
+            },
+            {
+              "id": "bad1b0d2-5376-3a7a-9d83-0b29f6ca9dd1",
+              "name": "resources.rules.dlint-catastrophic-redos",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
+              },
+              "fullDescription": {
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "help": {
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.dlint-catastrophic-redos"
+                ]
+              }
+            },
+            {
+              "id": "16f0aff3-dd82-3865-a907-fb4319ebb27b",
+              "name": "resources.rules.dlint-catastrophic-redos",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
+              },
+              "fullDescription": {
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "help": {
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.dlint-catastrophic-redos"
+                ]
+              }
+            }
+          ],
           "language": "en-US",
           "contents": [
             "localizedData",
@@ -20,7 +192,225 @@
         }
       },
       "language": "en-US",
-      "results": [],
+      "results": [
+        {
+          "ruleId": "36e67a54-6f32-3646-a04a-3149a5ce2015",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "examples/model_custom.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 15,
+                  "endLine": 50,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "    test_dl = DataLoader(test_ds, min(batch_size, 1024), shuffle=False,\n                            num_workers=num_workers)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "bb043ed537137663ea7e4c94cdbec2a456554a8097959b7d76933a2af6882c45d532677020e14a31162e6be350ed82e40820ca47285d2166e2174cf13188d9ee_1"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "a9f09430-503e-31ff-b70a-22caae0479ee",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "examples/model_custom.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 13,
+                  "endLine": 40,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "            pickle.dump(train_ds.class_to_idx, f)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "d9cbc96896ab74dd427daf93c4ce9b98bfb146d456dafa92e0b89e4f216082e96e8a90a01c1c04c45567dc6a2770d2bafd92e8db66540595e2e7d4c580ba2a46_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "21e2f9d2-c7a9-3712-a2d9-7426b75933c7",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "examples/model_custom.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 16,
+                  "endLine": 48,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "    train_dl = DataLoader(train_ds, batch_size, shuffle=True, num_workers=num_workers,\n                            worker_init_fn=seed_worker, generator=g)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "bb043ed537137663ea7e4c94cdbec2a456554a8097959b7d76933a2af6882c45d532677020e14a31162e6be350ed82e40820ca47285d2166e2174cf13188d9ee_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "2055e11b-ca5e-3d02-b28d-937c12a20c72",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The Python 'subprocess' module called with 'shell=True' may allow for shell injection"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tcast/extension.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 22,
+                  "endLine": 79,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "            result = check_output(\"lscpu\", shell=True).decode(\"utf-8\").strip().lower().split()"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "f3450fd4e290d53ca7915acc55d876920caa9ccecb54ede82d88fc0f519a022d38e8a7ef67feb7278710279ab8396dd5faa61f4d2030da41a4b85c4b1bd569f0_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "aae5145e-f935-3163-901a-62accea369a2",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Regex `r\"(float|bfloat|int|uint)(\\d+)\"` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tcast/number.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 17,
+                  "endLine": 116,
+                  "endColumn": 68,
+                  "snippet": {
+                    "text": "        if m := re.fullmatch(r\"(float|bfloat|int|uint)(\\d+)\", name):"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "88566bbf3269bff320c702af49dcde876223ca87891b686c379376e90f6f15c4f3e73dd63d65136d3f92d366b705b40ca7b3521f0c8568390ce5929f8d7a33c1_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "bad1b0d2-5376-3a7a-9d83-0b29f6ca9dd1",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Regex `r\"t(\\d+)(d\\d+)?\"` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tcast/scale.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 23,
+                  "endLine": 60,
+                  "endColumn": 62,
+                  "snippet": {
+                    "text": "            elif m := re.fullmatch(r\"t(\\d+)(d\\d+)?\", segment):"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "a182e1a68c845aba82af2800859d949c1cc7833ae4a5ee94a85bb89772b4be757caf17ab09ad9ea4c0c04505fa9ddd9964bca279b56c3ef5846b106c24202672_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "16f0aff3-dd82-3865-a907-fb4319ebb27b",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Regex `r\"e(\\d+)m(\\d+)(b\\d+)?(fn|fnuz)?\"` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tcast/number.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 133,
+                  "startColumn": 21,
+                  "endLine": 133,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "            if m := re.fullmatch(r\"e(\\d+)m(\\d+)(b\\d+)?(fn|fnuz)?\", name):"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "7e292f3307eb2791c98914ed01931523463a30d00515e0ecad609da88ad4725a2e00f716cd8684c25d5edb0703679875f47109750cd35ac1bb1ccb015cca0d66_0"
+          },
+          "properties": {}
+        }
+      ],
       "newlineSequences": [
         "\r\n",
         "\n"
