@@ -37,6 +37,30 @@
               }
             },
             {
+              "id": "2055e11b-ca5e-3d02-b28d-937c12a20c72",
+              "name": "resources.rules.insecure-subprocess-use",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.insecure-subprocess-use"
+              },
+              "fullDescription": {
+                "text": "The Python 'subprocess' module called with 'shell=True' may allow for shell injection"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "The Python 'subprocess' module called with 'shell=True' may allow for shell injection\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "The Python 'subprocess' module called with 'shell=True' may allow for shell injection\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.insecure-subprocess-use"
+                ]
+              }
+            },
+            {
               "id": "a9f09430-503e-31ff-b70a-22caae0479ee",
               "name": "python.lang.security.deserialization.pickle.avoid-pickle",
               "shortDescription": {
@@ -87,26 +111,26 @@
               }
             },
             {
-              "id": "2055e11b-ca5e-3d02-b28d-937c12a20c72",
-              "name": "resources.rules.insecure-subprocess-use",
+              "id": "16f0aff3-dd82-3865-a907-fb4319ebb27b",
+              "name": "resources.rules.dlint-catastrophic-redos",
               "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.insecure-subprocess-use"
+                "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
               },
               "fullDescription": {
-                "text": "The Python 'subprocess' module called with 'shell=True' may allow for shell injection"
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
               },
               "defaultConfiguration": {
                 "enabled": true,
-                "level": "warning"
+                "level": "error"
               },
               "help": {
-                "text": "The Python 'subprocess' module called with 'shell=True' may allow for shell injection\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "The Python 'subprocess' module called with 'shell=True' may allow for shell injection\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
               },
               "properties": {
                 "precision": "very-high",
                 "tags": [
-                  "resources.rules.insecure-subprocess-use"
+                  "resources.rules.dlint-catastrophic-redos"
                 ]
               }
             },
@@ -136,30 +160,6 @@
             },
             {
               "id": "bad1b0d2-5376-3a7a-9d83-0b29f6ca9dd1",
-              "name": "resources.rules.dlint-catastrophic-redos",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
-              },
-              "fullDescription": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "help": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.dlint-catastrophic-redos"
-                ]
-              }
-            },
-            {
-              "id": "16f0aff3-dd82-3865-a907-fb4319ebb27b",
               "name": "resources.rules.dlint-catastrophic-redos",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
@@ -221,6 +221,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "bb043ed537137663ea7e4c94cdbec2a456554a8097959b7d76933a2af6882c45d532677020e14a31162e6be350ed82e40820ca47285d2166e2174cf13188d9ee_1"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "2055e11b-ca5e-3d02-b28d-937c12a20c72",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The Python 'subprocess' module called with 'shell=True' may allow for shell injection"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tcast/extension.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 22,
+                  "endLine": 79,
+                  "endColumn": 55,
+                  "snippet": {
+                    "text": "            result = check_output(\"lscpu\", shell=True).decode(\"utf-8\").strip().lower().split()"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "f3450fd4e290d53ca7915acc55d876920caa9ccecb54ede82d88fc0f519a022d38e8a7ef67feb7278710279ab8396dd5faa61f4d2030da41a4b85c4b1bd569f0_0"
           },
           "properties": {}
         },
@@ -287,33 +318,33 @@
           "properties": {}
         },
         {
-          "ruleId": "2055e11b-ca5e-3d02-b28d-937c12a20c72",
+          "ruleId": "16f0aff3-dd82-3865-a907-fb4319ebb27b",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "The Python 'subprocess' module called with 'shell=True' may allow for shell injection"
+            "text": "Regex `r\"e(\\d+)m(\\d+)(b\\d+)?(fn|fnuz)?\"` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "tcast/extension.py",
+                  "uri": "tcast/number.py",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 79,
-                  "startColumn": 22,
-                  "endLine": 79,
-                  "endColumn": 55,
+                  "startLine": 133,
+                  "startColumn": 21,
+                  "endLine": 133,
+                  "endColumn": 73,
                   "snippet": {
-                    "text": "            result = check_output(\"lscpu\", shell=True).decode(\"utf-8\").strip().lower().split()"
+                    "text": "            if m := re.fullmatch(r\"e(\\d+)m(\\d+)(b\\d+)?(fn|fnuz)?\", name):"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "f3450fd4e290d53ca7915acc55d876920caa9ccecb54ede82d88fc0f519a022d38e8a7ef67feb7278710279ab8396dd5faa61f4d2030da41a4b85c4b1bd569f0_0"
+            "matchBasedId/v1": "7e292f3307eb2791c98914ed01931523463a30d00515e0ecad609da88ad4725a2e00f716cd8684c25d5edb0703679875f47109750cd35ac1bb1ccb015cca0d66_0"
           },
           "properties": {}
         },
@@ -376,37 +407,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "a182e1a68c845aba82af2800859d949c1cc7833ae4a5ee94a85bb89772b4be757caf17ab09ad9ea4c0c04505fa9ddd9964bca279b56c3ef5846b106c24202672_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "16f0aff3-dd82-3865-a907-fb4319ebb27b",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Regex `r\"e(\\d+)m(\\d+)(b\\d+)?(fn|fnuz)?\"` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "tcast/number.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 133,
-                  "startColumn": 21,
-                  "endLine": 133,
-                  "endColumn": 73,
-                  "snippet": {
-                    "text": "            if m := re.fullmatch(r\"e(\\d+)m(\\d+)(b\\d+)?(fn|fnuz)?\", name):"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "7e292f3307eb2791c98914ed01931523463a30d00515e0ecad609da88ad4725a2e00f716cd8684c25d5edb0703679875f47109750cd35ac1bb1ccb015cca0d66_0"
           },
           "properties": {}
         }
